@@ -1,9 +1,10 @@
 import maxflow
+import time
 
 def Find_Density(answer):
         ''' Finds the density of the returned subgraph.'''
 	degree = 0
-	file = open("soc-buzznet.txt","r")
+	file = open("edges.txt","r")
 	while True:
 		edge = file.readline()
 		#print "Reading an edge"
@@ -44,7 +45,7 @@ def make_graph(number_of_nodes, number_of_edges, least_density):
 	#print nodes
 	degrees = {}
 	#print degrees
-	file = open("soc-buzznet.txt","r")
+	file = open("edges.txt","r")
 	while True:
 		edge = file.readline()
 		if not edge:
@@ -83,7 +84,9 @@ def make_graph(number_of_nodes, number_of_edges, least_density):
 number_of_nodes = int(raw_input("Enter number of nodes: ")) + 1
 number_of_edges = int(raw_input("Enter number of edges: "))
 
+start_time = time.clock()
 answer = Find_Densest_Subgraph(number_of_nodes, number_of_edges)
+print time.clock() - start_time
 print answer
 Find_Density(answer)
 

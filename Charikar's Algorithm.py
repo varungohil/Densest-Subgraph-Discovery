@@ -1,5 +1,5 @@
+import time
 
-import math
 file = open("edges.txt","r")
 edges = []
 deg={}
@@ -61,7 +61,8 @@ def f_pop(counter): #
         del dic[k]
         del deg[k]
             
-#main           
+#main 
+start_time = time.clock()          
 maxdens=0
 subgraph=[]
 while(len(deg)>0):
@@ -76,6 +77,7 @@ while(len(deg)>0):
         subgraph=dic.keys()
         '''print "ans",maxdens,subgraph'''
     '''print dic'''
+print time.clock() - start_time
 print subgraph
 print maxdens      
 
