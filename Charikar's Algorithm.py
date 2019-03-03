@@ -1,4 +1,4 @@
-    import time
+import time
 
 def maxdensity(dic): #density of subgraph
     a=0
