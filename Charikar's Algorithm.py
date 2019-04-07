@@ -34,8 +34,9 @@ start_time = time.clock()
 file = open("edges.txt","r")  
 edges=file.readlines()
 for i in edges:
-    print "..."
-    edge=map(int,i.split())
+    print("...")
+    edge=list(map(int,i.split()))
+    print(edge)
     if edge[0] not in dic.keys():
         dic[edge[0]]=[]
         deg[edge[0]]=0
@@ -72,7 +73,7 @@ start_time = time.clock()
 maxdens=0
 subgraph=[]
 while(len(deg)>0):
-    print "Algo at work!"
+    print("Algo at work!")
     mindeg=float('inf')
     for i in deg.keys():
         mindeg= min(deg[i],mindeg)
@@ -81,11 +82,12 @@ while(len(deg)>0):
     
     if (maxdensity(dic)>maxdens):
         maxdens=maxdensity(dic)
+        print(dic)
         subgraph=dic.keys()
         '''print "ans",maxdens,subgraph'''
     '''print dic'''
-print time.clock() - start_time
-print subgraph
-print maxdens      
+print(time.clock() - start_time)
+print(subgraph)
+print(maxdens)      
 
 
