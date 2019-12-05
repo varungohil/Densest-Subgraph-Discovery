@@ -1,3 +1,7 @@
+# #################################################################################################
+#   Authors  #  Mridul Sharma (mridul.sharma@iitgn.ac.in) , Heer Ambavi (heer.ambavi@iitgn.ac.in) #
+###################################################################################################
+##
 import time
 
 def maxdensity(dic): #density of subgraph
