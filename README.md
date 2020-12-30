@@ -19,3 +19,8 @@ The programs have been written in Python 2.7 but can be run with Python 3 with m
 
 ### Output
 The program returns a python list of the nodes that are in the densest subgraph and the density of the subgraph.
+
+### Contributors
+- [Heer Ambavi](https://github.com/HeerAmbavi)
+- [Mridul Sharma](https://www.linkedin.com/in/sharma-mridul?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bzq2bZiU6QUCW0JBicIczFQ%3D%3D)
+- [Varun Gohil](https://github.com/varungohil)
